@@ -97,6 +97,7 @@ import NotifyEditWebhook from '@/views/notify-edit-webhook/DataForm.vue'
 import NotifyEditWorkWeixin from '@/views/notify-edit-work-weixin/DataForm.vue'
 import NotifyEditDingTalk from '@/views/notify-edit-ding-talk/DataForm.vue'
 import NotifyEditFeishu from '@/views/notify-edit-feishu/DataForm.vue'
+import NotifyEditBark from '@/views/notify-edit-bark/DataForm.vue'
 import { NotifyTypeEnum } from '@/emuns/notify-type-enums.js'
 import { EventOptions, EventEnum } from '@/emuns/event-enums.js'
 
@@ -157,6 +158,12 @@ export default {
           label: this.$t('飞书'),
           icon: 'ChatSquare',
           component: NotifyEditFeishu,
+        },
+        {
+          value: NotifyTypeEnum.Bark,
+          label: this.$t('Bark'),
+          icon: 'ChatSquare',
+          component: NotifyEditBark,
         },
         
       ],

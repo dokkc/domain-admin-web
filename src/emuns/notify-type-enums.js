@@ -19,6 +19,9 @@ export const NotifyTypeEnum = {
 
   // 飞书
   Feishu: 5,
+
+  // Bark
+  Bark: 6,
 }
 
 export const NotifyTypeOptions = [
@@ -41,6 +44,10 @@ export const NotifyTypeOptions = [
   {
     value: NotifyTypeEnum.Feishu,
     label: translate('飞书'),
+  },
+  {
+    value: NotifyTypeEnum.Bark,
+    label: translate('Bark'),
   },
 ]
 
